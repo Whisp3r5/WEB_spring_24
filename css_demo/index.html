@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad | CSS Demo </title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #orange-text{
+            color: orange;
+        }
+        .multi-line{
+            color: red;
+            text-align: right;
+            font-size: large;
+        }
+        body{
+            background-color: navajowhite;
+        }
+        #small-text{
+            font-size: small;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>  
+    </div>
+
+    <h1>Today, we will be talking about how to add style to our pages</h1>
+    <h2>This is how we will add style INLINE with CSS</h2>
+    <p style ="color:blue">I want this text to be blue.</p>
+    <p style ="font-size: 100px">I want this text to be really BIG</p>
+    <p style ="font-size: 5px">I want this text to ne really small.</p>
+    <p style ="text-align: center">I want this text to be centered</p>
+    <p style ="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">I want this text to be a script font</p>
+    <p style ="font-size: large; text-align: right; color:blueviolet"></p>
+
+    <h2>This is how we do internal CSS</h2>
+    <p id="orange-text">I want this text to be orange</p>
+    <p class="multi-line">This line will be styled the same as the next one...</p>
+    <p class="multi-line"> and the one below this one</p>
+    <p class="multi-line">We all look the same!</p>
+
+    <h2>This is how we use EXTERNAL CSS</h2>
+    <p>First, create your external style.css file</p>
+    <p id="multi-text">Give this line a selector and add the style details to style.css</p>
+    <p>Can we use inline, internal, and external together?</p>
+    <p>Sure can!</p>
+    <p style="color: green;" id="small-text" class="center-text">I want this text to be small green and centered</p>
+
+    <div class="my-first-div">
+        <p>This paragraph is part of a div.</p>
+        <p>So is this one</p>
+        <p>That image is too</p>
+        <img src="images/jokic_game.jfif" width="300" alt="jokic game time">
+        <p> This <span id="span-1">word</span> and this <span id="span-2"> group of words will look different.</span></p>
+    </div>
+</body>
+</html>

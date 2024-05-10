@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad G || Choose your own adventure game</title>
+</head>
+<body>
+    <script>
+        function playGame() {
+
+        
+        var enterCave = confirm("You came across a strange cave in a mountain, do you want to go in?");
+        if(enterCave == true){
+            alert("You have entered the cold, dark cave and see 3 openings that you can explore.");
+            var exploreRoom = prompt("Do you want to explore room 1, 2 or 3?")
+            if (exploreRoom == 1){
+                alert("This room is full of venomous snakes that when you enter all jump onto at once, paralyzing you while choking you, and biting you at the same time. Game Over!")
+            } else if(exploreRoom == 2){
+                alert("You walk in and see a lost traveler.")
+                var traveler = prompt("Do you 1: Ignore them, 2: Attack them, or 3: Try to talk to them. Please enter 1, 2 or 3?")
+                if(traveler == 1){
+                    alert("The traveler feels disrespected by you ignoring them, so they got really mad and killed you. Game Over!")
+                } else if(traveler == 2){
+                    alert("You attack the traveler, however the traveler has a knife and he stabs you multiple times. You then spend the next minutes bleeding out contemplating your life. Game Over!")
+                } else if(traveler == 3){
+                    alert("The traveler offers you 1 million dollars.")
+                    var money = prompt("Do you 1: Refuse the offer, 2: Accept the offer, or 3: Try to steal it. Please answer with 1, 2, or 3.")
+                    if(money == 1){ 
+                        alert("You have passed the test. You Win!")
+                    } else if(money == 2){
+                        alert("You were too greedy and the traveler got mad and killed you. Game Over!")
+                    } else{
+                        alert("You attack the traveler, however he has a weapon and kills you. Game Over!")
+                    }
+                }else{
+                    alert("Please try again")
+                }
+            } else if(exploreRoom == 3){
+                alert("This room is full of lava, that istantly burns off your legs, and then slowly burns the rest of you body until you finally die. Game Over!")
+            } else{
+                alert("Please try again")
+            }
+        } else{
+            alert("Game Over!")
+        }
+            var playAgain = confirm("Do you want to play again?")
+            if (playAgain == true){
+                playGame();
+            } else{
+                alert("Thanks for playing! Goodye!")
+            }
+        }
+
+        playGame();
+    </script>
+</body>
+</html>

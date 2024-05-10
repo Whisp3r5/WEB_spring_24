@@ -1,0 +1,41 @@
+#multi-text{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav{
+    list-style: none;
+    text-align: center;
+}
+
+.nav li{
+    display: inline;
+    margin-right: 20px;
+
+}
+.center-text{
+    text-align: center;
+}
+.my-first-div {
+    font-size: large;
+    color: aquamarine;
+    background-color: darkolivegreen;
+
+}
+#span-1{
+    color: gold;
+    font-size: 300px;
+}
+#span-2{
+    color: blueviolet;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: white;
+    font-size: 25px;
+}
